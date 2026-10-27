@@ -1,0 +1,54 @@
+{% extends 'helloweb/base.html' %}
+
+{% block title %}Відомі жителі{% endblock %}
+
+{% block content %}
+<h1 class="section-title">Відомі жителі</h1>
+{% include 'helloweb/_history_tabs.html' %}
+
+<div class="row g-4">
+    <div class="col-md-6">
+        <div class="card-custom person-card h-100 mb-0">
+            <div class="avatar">ІП</div>
+            <div>
+                <h4>Іван Петренко</h4>
+                <small>Письменник, 1880–1945</small>
+                <p>Автор романів і оповідань про життя міста. Його будинок на центральній вулиці сьогодні є музеєм.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card-custom person-card h-100 mb-0">
+            <div class="avatar">МК</div>
+            <div>
+                <h4>Марія Коваленко</h4>
+                <small>Вчена-хімік, 1902–1978</small>
+                <p>Одна з перших жінок-професорів у регіоні, засновниця наукової лабораторії при міському університеті.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card-custom person-card h-100 mb-0">
+            <div class="avatar">ОШ</div>
+            <div>
+                <h4>Олексій Шевченко</h4>
+                <small>Архітектор, 1910–1985</small>
+                <p>Спроєктував кілька знакових будівель міста, зокрема вокзал і будинок культури.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card-custom person-card h-100 mb-0">
+            <div class="avatar">ЛБ</div>
+            <div>
+                <h4>Людмила Бондаренко</h4>
+                <small>Оперна співачка, 1935–2010</small>
+                <p>Виступала на провідних сценах, а потім багато років викладала в міському музичному училищі.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

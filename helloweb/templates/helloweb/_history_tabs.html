@@ -1,0 +1,5 @@
+<div class="history-tabs">
+    <a href="{% url 'history' %}" class="{% if request.resolver_match.url_name == 'history' %}active{% endif %}">Загальна історія</a>
+    <a href="{% url 'history_people' %}" class="{% if request.resolver_match.url_name == 'history_people' %}active{% endif %}">Відомі жителі</a>
+    <a href="{% url 'history_photos' %}" class="{% if request.resolver_match.url_name == 'history_photos' %}active{% endif %}">Історичні фото</a>
+</div>

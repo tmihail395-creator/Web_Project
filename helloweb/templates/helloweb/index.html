@@ -1,0 +1,15 @@
+{% extends 'helloweb/base.html' %}
+
+{% block title %}Головна{% endblock %}
+
+{% block content %}
+<div class="hero-section">
+    <h1 class="display-4 fw-bold">Ласкаво просимо до <span class="text-accent">нашого міста!</span></h1>
+    <p class="lead mt-3 text-white-50">Офіційний інформаційний міський портал.</p>
+    <p class="text-white-50 mb-4">Використовуйте меню зверху, щоб переглядати розділи сайту.</p>
+    <div class="d-flex flex-wrap gap-3">
+        <a href="{% url 'news' %}" class="btn-main-glass">Читати новини</a>
+        <a href="{% url 'contacts' %}" class="btn-sec-glass">Термінові контакти</a>
+    </div>
+</div>
+{% endblock %}

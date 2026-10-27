@@ -1,0 +1,56 @@
+{% extends 'helloweb/base.html' %}
+
+{% block title %}Контакти служб{% endblock %}
+
+{% block content %}
+<h1 class="section-title">Контакти служб</h1>
+
+<div class="hero-section mb-4" style="margin-top: 0; padding: 28px 30px;">
+    <h2 class="h4 mb-1">Єдиний номер екстреної допомоги: <span class="text-accent">112</span></h2>
+    <p class="text-white-50 mb-0">Дзвінки безкоштовні, працює цілодобово.</p>
+</div>
+
+<div class="table-wrap">
+    <table class="table table-custom">
+        <thead>
+            <tr>
+                <th>Служба</th>
+                <th>Телефон</th>
+                <th>Години роботи</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Пожежно-рятувальна служба</td>
+                <td>101</td>
+                <td>Цілодобово</td>
+            </tr>
+            <tr>
+                <td>Поліція</td>
+                <td>102</td>
+                <td>Цілодобово</td>
+            </tr>
+            <tr>
+                <td>Швидка медична допомога</td>
+                <td>103</td>
+                <td>Цілодобово</td>
+            </tr>
+            <tr>
+                <td>Аварійна служба газу</td>
+                <td>104</td>
+                <td>Цілодобово</td>
+            </tr>
+            <tr>
+                <td>Міська рада</td>
+                <td>(000) 000-00-00</td>
+                <td>Пн–Пт, 9:00–18:00</td>
+            </tr>
+            <tr>
+                <td>Водоканал</td>
+                <td>(000) 000-00-01</td>
+                <td>Цілодобово</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+{% endblock %}
